@@ -35,13 +35,8 @@
 
     <div class="mb-3">
         <label for="img" class="form-label">Immagine del progetto</label>
-        <input type="file" class="form-control @error('img') is-invalid @enderror" id="img" name="img" maxlength="2048" placeholder="Inserisci la copertina...">
+        <input type="file" class="form-control" id="img" name="img" maxlength="2048" placeholder="Inserisci la copertina...">
         
-        @error('img')
-            <div class="alert alert-danger">
-                ERRORE IMMAGINE: {{ $message }}
-            </div>
-        @enderror
     </div>
     
 

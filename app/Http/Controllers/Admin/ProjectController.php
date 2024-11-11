@@ -56,7 +56,6 @@ class ProjectController extends Controller
 
         $project = Project::create($data);
 
-
         $imgPath = Storage::put('uploads', $data['img']);
         $data['img'] = $imgPath;
 
